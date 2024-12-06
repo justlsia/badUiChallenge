@@ -1,0 +1,91 @@
+body {
+    background: url('https://via.placeholder.com/800x600') no-repeat center fixed, linear-gradient(45deg, red, blue);
+    font-family: "Papyrus", sans-serif;
+    color: yellow;
+    animation: background-change 5s infinite;
+}
+
+@keyframes background-change {
+    0% { background-color: purple; }
+    50% { background-color: orange; }
+    100% { background-color: purple; }
+}
+
+h1 {
+    font-size: 6rem;
+    color: lime;
+    text-align: center;
+    text-shadow: 3px 3px magenta;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+nav {
+    background: black;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: cyan;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: red;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content section {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    padding: 20px;
+    border: 5px dashed yellow;
+    overflow: hidden;
+    position: relative;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+form {
+    margin: 50px auto;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+}
+
+form input, form textarea, form select {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+}
+
+form button {
+    background: lime;
+    color: red;
+    font-size: 1.5rem;
+}
+
+video, audio {
+    margin: 20px auto;
+    display: block;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <!-- Title -->
+    <title>Contact</title>
+</head>
+<body>
+
+    <!-- Titre principal de la page -->
+    <h1>Contact</h1>
+
+    <!-- Paragraphe avec un lien non fonctionnel -->
+    <p>Cliquez <a href="">ici</a> pour obtenir les informations nécessaires afin de nous contacter</p>
+
+    <!-- Zone vidéo -->
+    <div class="video-container">
+        <!-- Vidéo en boucle automatique, pas de son (muted) -->
+        <video autoplay loop muted>
+            <source src="bad_sound_video.mp4" type="video/mp4">
+            <!-- Message de secours pour les navigateurs ne prenant pas en charge les vidéos -->
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+    </div>
+
+    <!-- Bouton inutile -->
+    <button id="contact" onclick="alert('Vous ne pouvez pas nous contacter ici !')">Contactez-nous</button>
+    
+    <!-- Animation js -->
+    <script src="../assets/scripts/contact.js"></script>
+
+</body>
+</html>

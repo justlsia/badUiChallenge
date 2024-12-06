@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Titre -->
+    <title>L'Enfer de l'UX</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <!-- Titre principal de la page -->
+        <h1>Bienvenue à l'Enfer UX</h1>
+        <nav>
+            <!-- Liens de navigation -->
+            <a href="#section1">Accueil</a> <!-- Lien ancre vers la section 1 -->
+            <a href="pages/about.html">À propos</a> <!-- Page "À propos" -->
+            <a href="pages/contact.html">Contact</a> <!-- Page "Contact" -->
+            <a href="#">404</a> 
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+        <!-- Section image grossisantes -->
+        <section id="section1">
+            <h2>Section 1</h2> 
+            <p>Texte illisible avec des couleurs gênantes. Cliquez si vous osez !</p>
+            <img src="https://via.placeholder.com/300x200" alt="Image inutile">
+        </section>
+
+        <!-- Section formulaire incorrect -->
+        <section id="section2">
+            <h2>Formulaire aléatoire</h2> 
+            <form>
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" placeholder="Votre nom ici">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="email@exemple.com">
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" placeholder="••••••••">
+
+                <label for="question">Question secrète :</label>
+                <textarea id="question" rows="4" placeholder="Répondez ici..."></textarea>
+
+                <button type="submit">Soumettre</button>
+            </form>
+        </section>
+
+        <!-- Section musique d'ambiance -->
+        <section id="section3">
+            <h2>Vidéo & Audio</h2> 
+            <!-- Vidéo en boucle qui démarre automatiquement -->
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop></video>
+            <!-- Audio en boucle qui démarre automatiquement -->
+            <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Mention Légales non disponibles. Aucun droit réservé.</p>
+    </footer>
+
+    <!-- Animation js -->
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #ff00ff;
+    text-shadow: 5px 5px #000000;
+    margin: 20px auto;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border: 10px dashed #ffcc00;
+    cursor: pointer;
+    animation: spin 5s linear infinite;
+}
+
+.video-container:hover {
+    animation: none;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.video-container:hover {
+    animation: none;
+    top: calc(10% + 90% * var(--random-y));
+    left: calc(10% + 90% * var(--random-x));
+}
+
+@keyframes flash {
+    0%, 100% {
+        background-color: #000000;
+    }
+    50% {
+        background-color: #ffffff;
+    }
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2em;
+    background-color: #00ffff;
+    border: 3px solid #ff00ff;
+    color: #000;
+    cursor: none;
+    transform: rotate(90deg);
+}
